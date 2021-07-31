@@ -30,7 +30,8 @@ header{
 	width: 100%;
 	height: 70px;
 	display: flex;
-    align-items: center; 
+    align-items: center;
+	float: left; 
 	justify-content: space-around; 
     background: transparent;
 	position: fixed;
@@ -44,7 +45,7 @@ header{
 
 header:hover{
 	opacity: 1;
-	background: var(--main-header-background);
+	background: #0b0c0f00;
 }
 
 .logo img{
@@ -57,6 +58,7 @@ header:hover{
 	list-style:none;
 	position: relative;
 	display: inline-flex;
+	
 }
 
 a.nav-link{
@@ -159,6 +161,53 @@ a.nav-link{
 	text-shadow: 0 0 50px var(--main-decor-color);
 }
 
+/*____________
+	SKILLS
+_____________*/
+.skill{
+	margin-top:100px;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	text-align:center;
+	color: var(--main-fonts-color);
+}
+
+  .progress {
+	margin: 50px auto;
+	padding: 2px;
+	width: 100%;
+	max-width: 500px;
+	background: white;
+	border: 3px solid #000;
+	border-radius: 20px;
+	overflow: hidden;
+	height: 15px;
+	text-align: center;
+  }
+  
+  .progress .progress__bar {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 15px;
+	background: repeating-linear-gradient(
+	  135deg,
+	  #036ffc,
+	  #036ffc 20px,
+	  #1163cf 20px,
+	  #1163cf 40px
+	);
+  }
+  .bar{
+	  text-align: center;
+	  color: #fff;
+  }
+  
+
+
+
 /*──────────────────
       projects
 ──────────────────*/
@@ -209,7 +258,6 @@ a.nav-link{
 
 .card .work-content{
 	text-align: center;
-	padding: 10px 5px;
 	font-size: 1rem;
 	color: var(--main-fonts-color);
 	font-family: var(--main-font-family);
@@ -265,6 +313,7 @@ footer {
 	font-size: 1.2rem;
 	line-height: 40px;
 	text-align: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .copyright a{
@@ -404,6 +453,9 @@ hr {
 	}	
 	.nav-bar li{
 		opacity:0;
+	}
+	h3{
+		font-size: xx-large;
 	}
 }
 
